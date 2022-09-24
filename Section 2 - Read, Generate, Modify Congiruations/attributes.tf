@@ -3,7 +3,7 @@
 
 provider "aws" {
   profile = "default" # AWS Credentials Profile configured on your local desktop terminal  $HOME/.aws/credentials
-  region     = "us-west-2"
+  region     = "ap-southeast-1"
 
 }
 
@@ -16,7 +16,7 @@ output "eip" {
 }
 
 resource "aws_s3_bucket" "mys3" {
-  bucket = "kplabs-attribute-demo-001"
+  bucket = "amir-attribute-demo-240922"
 }
 
 output "mys3bucket" {
