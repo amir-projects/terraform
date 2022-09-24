@@ -20,6 +20,8 @@ resource "aws_instance" "myec2" {
 }
 ```
 # Commands:
+```
 terraform init
 terraform plan
 terraform apply
+```
