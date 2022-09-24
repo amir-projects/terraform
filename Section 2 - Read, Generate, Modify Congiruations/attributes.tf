@@ -1,7 +1,10 @@
+# Undestanding Attributes
+## Terraform has capability to output the attribute of a resource with the output values
+
 provider "aws" {
+  profile = "default" # AWS Credentials Profile configured on your local desktop terminal  $HOME/.aws/credentials
   region     = "us-west-2"
-  access_key = "PUT-YOUR-ACCESS-KEY-HERE"
-  secret_key = "PUT-YOUR-SECRET-KEY-HERE"
+
 }
 
 resource "aws_eip" "lb" {
