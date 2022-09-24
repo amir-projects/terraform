@@ -10,13 +10,13 @@ terraform {
   required_providers {
     github = {
       source = "integrations/github"
-      version = "4.3.2"
+      version = "~> 4.0"
     }
   }
 }
 
 provider "github" {
-  token = "8c6f0e838e998844a8bb32b0050a7dee6a31a4df"
+  token = "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"
 }
 
 resource "github_repository" "example" {
